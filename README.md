@@ -1,4 +1,4 @@
-# ToDo list 
+# ToDo list (work in progress)
 
 
 ## Motivation 
