@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function Form() {
+function Form({addTodo}) {
   //this state keeps a track of the text the users types in the input field
   //'text' is the variable that stores what is being typed
   //'setText' is the function that updates the text variable once the submit button is clicked
@@ -10,7 +10,8 @@ function Form() {
   function handleSubmit(event) {
     //this stops the page from refreshing everytime the button is clicked
     event.preventDefault();
-    console.log(text);
+    //this will contain the text variable we want to add to our list
+    addTodo(text);
     setText("");
   }
 
