@@ -1,6 +1,7 @@
 //import "./App.css";
 import Form from "./Components/Form";
 import { useState } from "react";
+import TodoList from "./Components/TodoList";
 
 function App() {
   //this state keeps track of all our todo list items
@@ -14,13 +15,14 @@ function App() {
   }
 
   //here we can see the latest value of our list 
-  console.log(todos)
+  //console.log(todos)
 
   return (
     <div className="App">
       <h1> Naomi's ToDo List</h1>
   {/* here we are passing the function down as a prop so that the list updates when the user clicks the submit button to add a new item */}
       <Form addTodo={addTodo} />
+      <TodoList />
     </div>
   );
 }
