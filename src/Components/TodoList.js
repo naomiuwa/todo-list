@@ -1,11 +1,15 @@
 import ListItem from "./ListItem";
 
-function TodoList() {
+//passing down the todos state variable as a prop to render
+function TodoList({ todos }) {
   return (
     <div>
-      <ListItem text="Item 1" />
-      <ListItem text="Item 2" />
-      <ListItem text="Item 3" />
+      {
+        //map takes the todos text & transforms it into a list
+        todos.map((todo, index) => {
+          return <ListItem text={todo} key={index} />;
+        })
+      }
     </div>
   );
 }
