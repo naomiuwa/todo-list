@@ -1,0 +1,5 @@
+1. Items cannot be added to the list if the user hasn't entered any text 
+2. The delete button removes one specific item from the list 
+3. 
+
+

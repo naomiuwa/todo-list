@@ -1,0 +1,9 @@
+Questions for Jacques: 
+- when using splice in the removeTodo function, are we telling it to remove one or at index 1?
+- 
+
+
+** CALLBACK FUNCTION
+
+A callback function is like a special instruction that you give to a computer program. You tell the program, "Hey, when something specific happens, like a button click or a task is done, please do this particular thing for me." It's a way to make the program remember and follow your instructions at the right time. It's like leaving a note for the program to read and act upon when the time is right.
+
