@@ -1,8 +1,13 @@
 .App {
   text-align: center;
+  background-color: peachpuff;
+  width: 100%;
+  /* vh stands for "viewport height," and using 100vh ensures that the background color covers the full height of the viewport. */
+  height: 100vh;
 }
 
-.App-logo {
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +40,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Form.css"
 
 function Form({addTodo}) {
   //this state keeps a track of the text the users types in the input field
@@ -18,7 +19,7 @@ function Form({addTodo}) {
   return (
     //when the submit button is clicked, the handleSubmit function is called
 
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <input
         type="text"
         //the value in the text field is equal to the 'text' variable
@@ -26,7 +27,7 @@ function Form({addTodo}) {
         //onChange detects when the value has changed and updates it to the latest value e.g. setText
         onChange={(event) => setText(event.target.value)}
       />
-      <input type="submit" />
+      <input className="submit-button" type="submit" />
     </form>
   );
 }
